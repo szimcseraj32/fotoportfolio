@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fotós Portfólió</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+  }
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  nav a:hover {
+    color: #007BFF;
+  }
+  section {
+    padding: 100px 20px 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  h1, h2 {
+    text-align: center;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+  }
+  .gallery img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: #f0f0f0;
+  }
+  /* Kontakt űrlap */
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+  }
+  form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  form button {
+    padding: 10px;
+    font-size: 1rem;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  form button:hover {
+    background: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#home">Kezdőlap</a>
+    <a href="#wedding">Esküvői fotók</a>
+    <a href="#studio">Stúdió</a>
+    <a href="#family">Családi</a>
+    <a href="#contact">Kapcsolat</a>
+  </nav>
+</header>
+
+<section id="home">
+  <h1>Fotós Portfólió</h1>
+  <p style="text-align:center;">Üdvözöllek a portfóliómban. Böngészd a galériákat!</p>
+</section>
+
+<section id="wedding">
+  <h2>Esküvői fotók</h2>
+  <div class="gallery">
+    <img src="https://picsum.photos/500/500?random=1" alt="Esküvő 1">
+    <img src="https://picsum.photos/500/500?random=2" alt="Esküvő 2">
+    <img src="https://picsum.photos/500/500?random=3" alt="Esküvő 3">
+    <img src="https://picsum.photos/500/500?random=4" alt="Esküvő 4">
+  </div>
+</section>
+
+<section id="studio">
+  <h2>Stúdiófotózás</h2>
+  <div class="gallery">
+    <img src="https://picsum.photos/500/500?random=5" alt="Stúdió 1">
+    <img src="https://picsum.photos/500/500?random=6" alt="Stúdió 2">
+    <img src="https://picsum.photos/500/500?random=7" alt="Stúdió 3">
+    <img src="https://picsum.photos/500/500?random=8" alt="Stúdió 4">
+  </div>
+</section>
+
+<section id="family">
+  <h2>Családi rendezvények</h2>
+  <div class="gallery">
+    <img src="https://picsum.photos/500/500?random=9" alt="Család 1">
+    <img src="https://picsum.photos/500/500?random=10" alt="Család 2">
+    <img src="https://picsum.photos/500/500?random=11" alt="Család 3">
+    <img src="https://picsum.photos/500/500?random=12" alt="Család 4">
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Kapcsolat</h2>
+  <form>
+    <input type="text" placeholder="Név" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Üzenet" rows="5" required></textarea>
+    <button type="submit">Küldés</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Fotós Portfólió | Adatvédelem
+</footer>
+
+</body>
+</html>
